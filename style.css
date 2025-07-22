@@ -191,6 +191,11 @@ body {
   font-size: 0.95rem;
 }
 
+/* PC/모바일 텍스트 표시 제어 */
+.mobile-only {
+  display: none;
+}
+
 /* 반응형 */
 @media (max-width: 900px) {
   .gallery-list, .review-list {
@@ -203,6 +208,12 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
   .header {
     flex-direction: column;
     padding: 1rem 0.5rem;
@@ -210,8 +221,8 @@ body {
   .nav {
     margin-top: 0.5rem;
   }
-  .hero-title {
-    font-size: 1.3rem;
+  .mobile-only.hero-title {
+    font-size: 2rem;
   }
   .info, .gallery, .reviews {
     padding: 1rem 0.5rem;
