@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: 'Noto Sans KR', Pretendard, sans-serif;
   background: #FFFFF0;
@@ -226,6 +230,17 @@ body {
   }
   .info, .gallery, .reviews {
     padding: 1rem;
+  }
+  .gallery-item, .review-card {
+    width: 75vw;
+    max-width: 280px;
+  }
+  .info ul {
+    max-width: 300px;
+    margin: 0 auto 1.5rem auto;
+  }
+  .map-wrap {
+    max-width: 300px;
   }
 }
 
