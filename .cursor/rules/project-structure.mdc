@@ -1,0 +1,61 @@
+---
+alwaysApply: true
+---
+# Project Structure Guide
+
+This project is a simple, static landing page. Below are the main files and their roles:
+
+- [index.html](mdc:index.html):
+  - The main HTML entry point for the site.
+  - Links to [style.css](mdc:style.css) for styles and [main.js](mdc:main.js) for interactivity.
+  - Add new sections or content directly within the `<body>` tag.
+  - Reference new assets (images, fonts, etc.) using relative paths.
+
+- [main.js](mdc:main.js):
+  - Contains all JavaScript logic for the landing page.
+  - Use this file to add interactivity, event listeners, or dynamic content.
+  - Place script tags at the end of the HTML `<body>` for best performance.
+
+- [style.css](mdc:style.css):
+  - Contains all CSS styles for the landing page.
+  - Follow a mobile-first, responsive design approach where possible.
+  - Use class selectors for styling new sections or components.
+
+## Adding Assets
+- Place images, fonts, or other assets in a dedicated folder (e.g., `assets/`).
+- Reference assets in HTML or CSS using relative paths (e.g., `assets/image.png`).
+
+## Best Practices
+- Keep HTML, CSS, and JS in their respective files for maintainability.
+- Use semantic HTML tags for better accessibility and SEO.
+- Comment your code where necessary to explain complex logic or structure.
+- Test changes in multiple browsers for compatibility.
+# Project Structure Guide
+
+This project is a simple, static landing page. Below are the main files and their roles:
+
+- [index.html](mdc:index.html):
+  - The main HTML entry point for the site.
+  - Links to [style.css](mdc:style.css) for styles and [main.js](mdc:main.js) for interactivity.
+  - Add new sections or content directly within the `<body>` tag.
+  - Reference new assets (images, fonts, etc.) using relative paths.
+
+- [main.js](mdc:main.js):
+  - Contains all JavaScript logic for the landing page.
+  - Use this file to add interactivity, event listeners, or dynamic content.
+  - Place script tags at the end of the HTML `<body>` for best performance.
+
+- [style.css](mdc:style.css):
+  - Contains all CSS styles for the landing page.
+  - Follow a mobile-first, responsive design approach where possible.
+  - Use class selectors for styling new sections or components.
+
+## Adding Assets
+- Place images, fonts, or other assets in a dedicated folder (e.g., `assets/`).
+- Reference assets in HTML or CSS using relative paths (e.g., `assets/image.png`).
+
+## Best Practices
+- Keep HTML, CSS, and JS in their respective files for maintainability.
+- Use semantic HTML tags for better accessibility and SEO.
+- Comment your code where necessary to explain complex logic or structure.
+- Test changes in multiple browsers for compatibility.

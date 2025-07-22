@@ -1,0 +1,249 @@
+body {
+  font-family: 'Noto Sans KR', Pretendard, sans-serif;
+  background: #FFFFF0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: #F5F5DC;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #6B8E23;
+}
+.nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav a:hover {
+  color: #6B8E23;
+}
+
+.hero {
+  text-align: center;
+  background: #eaf5e1 url('assets/images/flower-shop.png') center/cover no-repeat;
+  padding: 4rem 1rem 3rem 1rem;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(234, 245, 225, 0.8);
+  z-index: 1;
+}
+
+.hero-title, .hero-desc {
+  position: relative;
+  z-index: 2;
+}
+.hero-title {
+  font-size: 2.2rem;
+  color: #6B8E23;
+  margin-bottom: 0.5rem;
+}
+.hero-desc {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.info {
+  background: #F5F5DC;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+.info h2 {
+  color: #6B8E23;
+  margin-bottom: 1rem;
+}
+.info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+.info li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.map-wrap {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(107,142,35,0.08);
+}
+
+.gallery {
+  padding: 2rem 1rem;
+}
+.gallery h2 {
+  color: #6B8E23;
+  margin-bottom: 1rem;
+}
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+.tab {
+  background: #F5F5DC;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.2s, color 0.2s;
+}
+.tab.active, .tab:hover {
+  background: #6B8E23;
+  color: #fff;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.gallery-item {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(107,142,35,0.08);
+  width: 180px;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  transition: transform 0.2s;
+}
+.gallery-item img {
+  width: 100%;
+  border-radius: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.gallery-item:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+.reviews {
+  background: #eaf5e1;
+  padding: 2rem 1rem;
+}
+.reviews h2 {
+  color: #6B8E23;
+  margin-bottom: 1rem;
+}
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.review-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(107,142,35,0.08);
+  padding: 1.2rem 1rem;
+  width: 220px;
+  font-size: 1rem;
+  color: #333;
+}
+.review-card span {
+  display: block;
+  margin-top: 0.7rem;
+  color: #6B8E23;
+  font-size: 0.95rem;
+}
+
+.sns {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.sns h2 {
+  color: #6B8E23;
+  margin-bottom: 1rem;
+}
+.sns-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.sns-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F5F5DC;
+  padding: 0.3rem;
+  transition: box-shadow 0.2s;
+}
+.sns-icon img:hover {
+  box-shadow: 0 2px 8px rgba(107,142,35,0.18);
+}
+
+.footer {
+  background: #F5F5DC;
+  text-align: center;
+  padding: 1.2rem 0;
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .gallery-list, .review-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery-item, .review-card {
+    width: 90vw;
+    max-width: 350px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+  }
+  .nav {
+    margin-top: 0.5rem;
+  }
+  .hero-title {
+    font-size: 1.3rem;
+  }
+  .info, .gallery, .reviews, .sns {
+    padding: 1.2rem 0.3rem;
+  }
+}
+
+/* fade-in 애니메이션 (선택) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+} 

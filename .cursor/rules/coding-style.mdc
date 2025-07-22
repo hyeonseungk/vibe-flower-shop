@@ -1,0 +1,32 @@
+# Coding Style Guide
+
+This rule describes the coding style conventions for this landing page project. Follow these guidelines for consistency and maintainability.
+
+## HTML
+- Use 2 spaces for indentation (no tabs).
+- Use semantic HTML tags (e.g., <header>, <main>, <section>, <footer>) where appropriate.
+- Use lowercase for all tag and attribute names.
+- Use double quotes for attribute values.
+- Close all tags, including self-closing tags (e.g., <img />, <br />).
+- Add comments to explain complex or non-obvious structures.
+
+## CSS
+- Use 2 spaces for indentation.
+- Use class selectors for styling (avoid IDs for styling purposes).
+- Use lowercase and hyphen-separated (kebab-case) class names (e.g., .main-section).
+- Group related styles together and use comments to separate sections.
+- Place media queries at the end of the file or section.
+- Prefer shorthand properties where possible (e.g., margin: 0 8px;).
+
+## JavaScript
+- Use 2 spaces for indentation.
+- Use camelCase for variable and function names.
+- Use const and let instead of var.
+- Prefer arrow functions for callbacks and short functions.
+- Add comments to explain complex logic or important sections.
+- Place all script tags at the end of the HTML <body> for best performance.
+
+## General
+- Keep code clean and remove unused code or comments.
+- Write self-explanatory code, but use comments where necessary.
+- Maintain consistency throughout the project.
