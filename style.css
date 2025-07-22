@@ -73,11 +73,12 @@ body {
 
 .info {
   background: #F5F5DC;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1.5rem;
   margin-top: 2rem;
 }
 .info h2 {
   color: #6B8E23;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 .info ul {
@@ -98,10 +99,11 @@ body {
 }
 
 .gallery {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1.5rem;
 }
 .gallery h2 {
   color: #6B8E23;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 .tabs {
@@ -150,10 +152,11 @@ body {
 
 .reviews {
   background: #eaf5e1;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1.5rem;
 }
 .reviews h2 {
   color: #6B8E23;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 .review-list {
@@ -179,11 +182,12 @@ body {
 }
 
 .sns {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1.5rem;
   text-align: center;
 }
 .sns h2 {
   color: #6B8E23;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 .sns-links {
@@ -235,7 +239,7 @@ body {
     font-size: 1.3rem;
   }
   .info, .gallery, .reviews, .sns {
-    padding: 1.2rem 0.3rem;
+    padding: 1rem 0.5rem;
   }
 }
 
