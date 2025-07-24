@@ -21,6 +21,7 @@
       <a href="#gallery">상품 갤러리</a>
       <a href="#reviews">고객 후기</a>
       <a href="#info">매장 정보</a>
+      <a href="#contact">문의하기</a>
     </nav>
   </header>
 
@@ -111,13 +112,30 @@
     </div>
   </section>
 
-
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <h2>문의하기</h2>
+    <p class="contact-desc">궁금한 사항이 있으시면 언제든지 문의해주세요!</p>
+    <form id="inquiry-form" class="inquiry-form">
+      <div class="form-group">
+        <label for="phone">휴대전화번호</label>
+        <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" required>
+      </div>
+      <div class="form-group">
+        <label for="inquiry">문의사항</label>
+        <textarea id="inquiry" name="inquiry" rows="4" placeholder="문의하실 내용을 자세히 입력해주세요" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">문의 보내기</button>
+    </form>
+    <div id="form-message" class="form-message"></div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 바이브꽃집. All rights reserved.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="main.js"></script>
 </body>
 </html> 
